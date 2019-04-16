@@ -1,0 +1,2 @@
+class DonatedBooksController < ApplicationController
+end
