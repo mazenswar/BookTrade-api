@@ -8,7 +8,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string :description
       t.string :imageURL
       t.string :isbn
-      t.string :book_condition
+      t.string :book_condition, default: 'Good (G)'
       t.timestamps
     end
   end

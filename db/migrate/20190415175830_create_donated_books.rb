@@ -8,7 +8,7 @@ class CreateDonatedBooks < ActiveRecord::Migration[5.2]
       t.string :imageURL
       t.string :description
       t.integer :user_id
-
+      t.string :book_condition, default: 'Good (G)'
       t.timestamps
     end
   end

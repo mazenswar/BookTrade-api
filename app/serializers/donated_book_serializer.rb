@@ -1,3 +1,3 @@
 class DonatedBookSerializer < ActiveModel::Serializer
-  attributes :id, :title, :authors, :publisher, :publishDate, :imageURL, :description
+  attributes :id, :title, :authors, :publisher, :publishDate, :imageURL, :description, :book_condition
 end

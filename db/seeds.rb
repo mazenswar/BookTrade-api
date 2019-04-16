@@ -28,7 +28,8 @@ bookObj = {
     publishDate: "2010",
     description: "Fun book",
     imageURL: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/book-cover-flyer-template-6bd8f9188465e443a5e161a7d0b3cf33.jpg?ts=1456287935",
-    isbn: "83943803281932"
+    isbn: "83943803281932",
+    book_condition: "Good (G)"
    }
 
 
