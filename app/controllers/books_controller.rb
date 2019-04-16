@@ -14,7 +14,15 @@ class BooksController < ApplicationController
     render json: @book
   end
 
+  def destroy
+    Book.find(params[:id]).destroy
+    @books = Book.all
+    render json: @books
+  end
+
   private
+
+
 
   def book_params
     params.require(:book).permit(:title, :authors, :publisher, :publishDate, :description, :imageURL)
