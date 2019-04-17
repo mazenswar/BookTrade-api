@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_04_16_204207) do
     t.string "description"
     t.string "imageURL"
     t.string "isbn"
-    t.string "book_condition", default: "Good (G)"
+    t.string "book_condition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
