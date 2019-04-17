@@ -10,6 +10,11 @@ class UsersController < ApplicationController
     render json: @users
   end
 
+  def show
+    @user = User.find(update_params[:id])
+    render json: @user
+  end
+
   def create
     @user = User.create(user_params)
     if @user.valid?
@@ -33,6 +38,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.permit(:username, :password, :email)
+    params.permit(:username, :password, :email, :donated_books)
   end
 end
