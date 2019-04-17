@@ -5,6 +5,11 @@ class DonatedBooksController < ApplicationController
     render json: @donated_books
   end
 
+  def show
+    @donated_book = DonatedBook.find(donated_params[:id])
+    render json: @donated_book
+  end
+
   def update
     @donated_book = DonatedBook.find(donated_params[:id])
     @donated_book.update(address: donated_params[:address])
